@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Finance Tracker PRO — Smart Offline Finance Manager</title>
+    <meta name="description"
+        content="Finance Tracker PRO is the ultimate offline finance manager. Track expenses, manage budgets, and gain insights without sharing your data." />
+    <meta name="author" content="Abhishek Patel" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Finance Tracker PRO — Smart Offline Finance Manager" />
+    <meta property="og:description"
+        content="Track expenses, manage budgets, and gain insights without sharing your data. 100% Offline & Secure." />
+    <meta property="og:image" content="assets/logo.png" />
+
+    <style>
+        :root {
+            --bg: #000000;
+            --surface-glass: rgba(255, 255, 255, 0.08);
+            --surface-glass-hover: rgba(255, 255, 255, 0.12);
+            --border: rgba(255, 255, 255, 0.15);
+            --primary: #007AFF;
+            --primary-gradient: linear-gradient(135deg, #007AFF 0%, #00C6FF 100%);
+            --text-main: #FFFFFF;
+            --text-muted: #86868b;
+            --glow: 0 0 20px rgba(0, 122, 255, 0.5);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(0, 122, 255, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(255, 0, 150, 0.15) 0%, transparent 25%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .logo img {
+            height: 36px;
+            width: 36px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            margin-left: 2rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-main);
+        }
+
+        .hero {
+            padding: 8rem 0 6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            font-weight: 400;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background: var(--text-main);
+            color: #000;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.2s;
+            font-size: 1.05rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .features {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 4rem;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .glass-card {
+            background: var(--surface-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            background: var(--surface-glass-hover);
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .screenshots {
+            padding: 6rem 0;
+        }
+
+        .screenshot-grid {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .screenshot-grid img {
+            width: 280px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease;
+        }
+
+        .screenshot-grid img:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 0;
+            margin-top: auto;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-main);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .screenshot-grid img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+
+            .footer-links a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Logo">
+                    <span>Finance Tracker PRO</span>
+                </a>
+                <div class="nav-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Master Your Money.<br>Private. Offline.</h1>
+                <p>Track expenses, analyze spending, and secure your financial future. No ads. No tracking. Just you and
+                    your money.</p>
+                <a href="#" class="btn">Download on App Store</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="glass-card feature-card">
+                        <h3>🔒 100% Offline</h3>
+                        <p>Your financial data stays on your device. We believe privacy is a fundamental right, not a
+                            feature.</p>
+                    </article>
+                    <article class="glass-card feature-card">
+                        <h3>📊 Beautiful Insights</h3>
+                        <p>Visualize your spending habits with stunning, interactive charts designed to help you save
+                            more.</p>
+                    </article>
+                    <article class="glass-card feature-card">
+                        <h3>🚫 Zero Distractions</h3>
+                        <p>A pure, premium experience. No advertisements, no upsells, just a clean interface for your
+                            finance.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <div class="container">
+                <h2 class="section-title">Designed for Focus</h2>
+                <div class="screenshot-grid">
+                    <img src="assets/screenshots/screen1.png" alt="Dashboard">
+                    <img src="assets/screenshots/screen2.png" alt="Analytics">
+                    <img src="assets/screenshots/screen3.png" alt="Transactions">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    &copy; 2025 Abhishek Patel. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="mailto:work8abhishek@gmail.com">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

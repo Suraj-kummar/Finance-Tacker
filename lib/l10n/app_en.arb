@@ -1,0 +1,70 @@
+{
+  "appTitle": "Finance Tracker PRO",
+  "home": "Home",
+  "stats": "Stats",
+  "wallet": "Wallet",
+  "settings": "Settings",
+  "transactions": "Transactions",
+  "financialOverview": "Financial Overview",
+  "balance": "Balance",
+  "income": "Income",
+  "expenses": "Expenses",
+  "addTransaction": "Add Transaction",
+  "updateTransaction": "Update Transaction",
+  "deleteTransaction": "Delete Transaction",
+  "cancel": "Cancel",
+  "filter": "Filter",
+  "noTransactions": "No transactions found",
+  "groups": "Groups",
+  "newGroup": "New Group",
+  "createGroup": "Create Group",
+  "noGroups": "No groups yet",
+  "createGroupPrompt": "Create a group to split expenses",
+  "groupName": "Group Name",
+  "members": "Members",
+  "addMember": "Add Member",
+  "memberAlreadyAdded": "Member already added",
+  "validationGroup": "Please enter a group name and at least one member",
+  "groupDetails": "Group Details",
+  "groupBalance": "Group Balance",
+  "allSettled": "All settled up!",
+  "addFirstExpense": "Add First Expense",
+  "startSplitting": "Start splitting expenses with your group by adding your first transaction. Track who pays what and settle up easily.",
+  "addExpense": "Add Expense",
+  "enterAmount": "Enter Amount",
+  "description": "Description",
+  "category": "Category",
+  "splitWith": "Split with",
+  "save": "Save",
+  "paidBy": "Paid by",
+  "you": "You",
+  "owes": "owes {amount}",
+  "@owes": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "isOwed": "is owed {amount}",
+  "@isOwed": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteTransactionTitle": "Delete Transaction?",
+  "deleteTransactionMessage": "Are you sure you want to delete '{name}'? This action cannot be undone.",
+  "@deleteTransactionMessage": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "delete": "Delete",
+  "noTransactionsYet": "No transactions yet",
+  "failedToLoadGroupData": "Failed to load group data. Please try again.",
+  "transactionDeletedSuccessfully": "Transaction deleted successfully"
+}

@@ -1,0 +1,2 @@
+E:/project_track_your_finance/android/app/.cxx/RelWithDebInfo/3p3s485p/armeabi-v7a/CMakeFiles/edit_cache.dir
+E:/project_track_your_finance/android/app/.cxx/RelWithDebInfo/3p3s485p/armeabi-v7a/CMakeFiles/rebuild_cache.dir
