@@ -191,11 +191,11 @@ Contributions are what make the open source community such an amazing place to l
   <h3>Developed with ❤️ by <a href="https://github.com/abhishek0112cs221008">Suraj</a></h3>
   
   <p>
-    <a href="https://github.com/abhishek0112cs221008">
+    <a href="https://github.com/Suraj-kummar">
       <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=social&logo=github" alt="GitHub" />
     </a>
     &nbsp;&nbsp;
-    <a href="mailto:abhishek@example.com">
+    <a href="mailto:surajnsg115@gmail.com">
       <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=social&logo=gmail" alt="Email" />
     </a>
   </p>
