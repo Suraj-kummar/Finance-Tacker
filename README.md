@@ -188,7 +188,7 @@ Contributions are what make the open source community such an amazing place to l
 <div align="center">
   <br>
   
-  <h3>Developed with ❤️ by <a href="https://github.com/abhishek0112cs221008">Abhishek</a></h3>
+  <h3>Developed with ❤️ by <a href="https://github.com/abhishek0112cs221008">Suraj</a></h3>
   
   <p>
     <a href="https://github.com/abhishek0112cs221008">
