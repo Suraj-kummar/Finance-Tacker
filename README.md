@@ -11,7 +11,7 @@
   <p style="font-size: 1.1em; max-width: 600px;">
     <b>Track Expenses</b> • <b>Split Bills</b> • <b>Visual Analytics</b> • <b>Offline First</b>
   </p>
-
+ 
   <br> 
 
   [![Flutter](https://img.shields.io/badge/Flutter-3.24.0-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
