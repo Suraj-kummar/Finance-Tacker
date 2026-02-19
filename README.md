@@ -5,7 +5,7 @@
   <img src="assets/icon/app_icon.png" alt="Finance Tracker PRO Logo" width="160" height="160" style="border-radius: 24px; box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease-in-out;" />
 
   <br><br>
-
+  
   <h1>Personal Finance, Reimagined.</h1> 
 
   <p style="font-size: 1.1em; max-width: 600px;">
