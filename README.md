@@ -6,7 +6,7 @@
 
   <br><br>
 
-  <h1>Personal Finance, Reimagined.</h1>
+  <h1>Personal Finance, Reimagined.</h1> 
 
   <p style="font-size: 1.1em; max-width: 600px;">
     <b>Track Expenses</b> • <b>Split Bills</b> • <b>Visual Analytics</b> • <b>Offline First</b>
